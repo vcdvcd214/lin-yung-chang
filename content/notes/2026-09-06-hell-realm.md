@@ -1,5 +1,5 @@
 ---
-title: 《地獄懺 Hell Realm》
+title: ・2026-09-06 | 《地獄懺 Hell Realm》
 date: 2026-09-06
 tags:
   - 展覽觀察
