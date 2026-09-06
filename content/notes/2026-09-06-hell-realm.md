@@ -42,7 +42,6 @@ description: 走訪國美館 U-108 SPACE 沉浸式科技應用實驗場域，記
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
   allowfullscreen>
 </iframe>
-
 *(強烈建議配戴耳機或使用具備低音單體的音響聆聽，感受現場低頻共鳴)*
 
 ---
