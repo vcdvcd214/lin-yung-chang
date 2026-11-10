@@ -47,7 +47,7 @@ description: 林永章的個人工藝筆記。收錄年度工藝賽事地圖、�
 
 - **[[notes/2026-09-06-hell-realm|《地獄懺 Hell Realm》]]**：國美館 U-108，32-bit float 現場收音。
 - **[[notes/2026-08-17-ice-and-fire-tea-caddy-rescue|冰火開蓋法]]**：透明釉誤當氧化鋁，12 顆茶倉的極限溫差救援。
-- **[[notes/2026-07-19-longan-kiln-bavi-wood-firing|龍眼窯柴燒]]**：窯溫曲線與柴燒現場紀錄。
+- **[[notes/2026-07-19-longan-kiln-bavi-wood-firing|龍安窯柴燒]]**：窯溫曲線與柴燒現場紀錄。
 - **[[notes/2026-05-11-Katsushi-Beats-and-Coffee|Katsushi：泥土、節奏與咖啡]]**：我推薦的背景聲音職人。
 - **[[notes/2026-02-07-signature-stamp|2026 落款印章]]**：比起像別人的刻印，我比較在意它像不像我。
 
