@@ -31,6 +31,9 @@ const commonExplorer = Component.Explorer({
   title: "🏺 全站導覽",
   folderClickBehavior: "link",
   sortFn: explorerSortFn,
+  limitPerFolder: 5,
+  // 這些資料夾不截斷：SEO 頁面（open-call）、書庫（Library）
+  noLimitFolders: ["Library", "open-call"],
   mapFn: (node) => {
     const isFile = !node.children || node.children.length === 0
     const frontmatter = node.frontmatter ?? {}

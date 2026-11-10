@@ -20,12 +20,18 @@ export interface Options {
   filterFn: (node: FileTrieNode) => boolean
   mapFn: (node: FileTrieNode) => void
   order: OrderEntries[]
+  /** 每個資料夾最多顯示幾個檔案，0 = 不限。超過時附上「還有 N 篇」連結。 */
+  limitPerFolder?: number
+  /** 不套用 limitPerFolder 的資料夾（可用資料夾名或完整路徑），例如 ["open-call", "Library"] */
+  noLimitFolders?: string[]
 }
 
 const defaultOptions: Options = {
   folderDefaultState: "collapsed",
   folderClickBehavior: "link",
   useSavedState: true,
+  limitPerFolder: 0,
+  noLimitFolders: [],
   mapFn: (node) => {
     return node
   },
@@ -74,6 +80,8 @@ export default ((userOpts?: Partial<Options>) => {
           sortFn: opts.sortFn.toString(),
           filterFn: opts.filterFn.toString(),
           mapFn: opts.mapFn.toString(),
+          limitPerFolder: opts.limitPerFolder ?? 0,
+          noLimitFolders: opts.noLimitFolders ?? [],
         })}
       >
         <button

@@ -130,6 +130,17 @@ button.desktop-explorer {
         color: var(--tertiary);
       }
     }
+
+    // 「⋯ 還有 N 篇」連結
+    & li.explorer-more > a {
+      opacity: 0.5;
+      font-style: italic;
+      font-size: 0.9em;
+
+      &:hover {
+        opacity: 0.9;
+      }
+    }
   }
 
   .folder-outer {

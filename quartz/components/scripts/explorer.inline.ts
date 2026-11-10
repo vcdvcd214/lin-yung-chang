@@ -12,6 +12,8 @@ interface ParsedOptions {
   filterFn: (node: FileTrieNode) => boolean
   mapFn: (node: FileTrieNode) => void
   order: "sort" | "filter" | "map"[]
+  limitPerFolder: number
+  noLimitFolders: string[]
 }
 
 type FolderState = {
@@ -151,6 +153,38 @@ function createFolderNode(
     ul.appendChild(childNode)
   }
 
+  // 限制每個資料夾顯示的檔案數量（子資料夾不受限）
+  // 檔案已依名稱升冪排序（日期檔名 = 舊→新），因此保留「最後 N 筆」＝最新 N 筆，
+  // 再反向附加，讓最新的排在最上面。
+  // 例外：noLimitFolders 內的資料夾（例如 SEO 用的 open-call）不截斷。
+  const folderName = node.slugSegment
+  const skipLimit =
+    opts.noLimitFolders.includes(folderName) || opts.noLimitFolders.includes(folderPath)
+  if (opts.limitPerFolder > 0 && !skipLimit) {
+    const fileNodes = Array.from(ul.children).filter(
+      (el) => !el.querySelector(".folder-container"),
+    )
+    if (fileNodes.length > opts.limitPerFolder) {
+      const hidden = fileNodes.length - opts.limitPerFolder
+      const keep = fileNodes.slice(-opts.limitPerFolder).reverse()
+      // 若目前頁面剛好是被截掉的檔案，仍保留它，避免側欄沒有 active 標示
+      const activeHidden = fileNodes
+        .slice(0, fileNodes.length - opts.limitPerFolder)
+        .filter((el) => el.querySelector("a.active"))
+      fileNodes.forEach((el) => el.remove())
+      activeHidden.forEach((el) => ul.appendChild(el))
+      keep.forEach((el) => ul.appendChild(el))
+
+      const moreLi = document.createElement("li")
+      moreLi.className = "explorer-more"
+      const moreA = document.createElement("a")
+      moreA.href = resolveRelative(currentSlug, folderPath)
+      moreA.textContent = `⋯ 還有 ${hidden} 篇`
+      moreLi.appendChild(moreA)
+      ul.appendChild(moreLi)
+    }
+  }
+
   return li
 }
 
@@ -164,6 +198,8 @@ async function setupExplorer(currentSlug: FullSlug) {
       folderDefaultState: (explorer.dataset.collapsed || "collapsed") as "collapsed" | "open",
       useSavedState: explorer.dataset.savestate === "true",
       order: dataFns.order || ["filter", "map", "sort"],
+      limitPerFolder: Number(dataFns.limitPerFolder) || 0,
+      noLimitFolders: Array.isArray(dataFns.noLimitFolders) ? dataFns.noLimitFolders : [],
       sortFn: new Function("return " + (dataFns.sortFn || "undefined"))(),
       filterFn: new Function("return " + (dataFns.filterFn || "undefined"))(),
       mapFn: new Function("return " + (dataFns.mapFn || "undefined"))(),
