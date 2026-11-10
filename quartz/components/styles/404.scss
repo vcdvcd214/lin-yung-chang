@@ -1,0 +1,120 @@
+@use "../../styles/variables.scss" as *;
+
+.notfound {
+  text-align: center;
+  padding: 1rem 0 3rem 0;
+
+  .nf-crack {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 0.5rem auto;
+    color: var(--gray);
+    opacity: 0.55;
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+
+    .nf-crack-main {
+      stroke-dasharray: 260;
+      stroke-dashoffset: 260;
+      animation: nf-draw 0.9s ease-out forwards;
+    }
+
+    .nf-crack-branch {
+      stroke-dasharray: 90;
+      stroke-dashoffset: 90;
+      animation: nf-draw 0.6s ease-out 0.5s forwards;
+    }
+  }
+
+  .nf-code {
+    font-family: var(--codeFont);
+    font-size: 0.8rem;
+    letter-spacing: 0.22em;
+    color: var(--gray);
+    margin: 0 0 0.4rem 0;
+    opacity: 0.8;
+  }
+
+  h1 {
+    margin: 0 0 1rem 0;
+    font-size: 1.9rem;
+    color: var(--dark);
+  }
+
+  .nf-lead {
+    font-size: 1.05rem;
+    color: var(--darkgray);
+    margin: 0 auto 0.5rem auto;
+    max-width: 34rem;
+  }
+
+  .nf-note {
+    font-size: 0.92rem;
+    color: var(--gray);
+    margin: 0 auto 2rem auto;
+    max-width: 32rem;
+  }
+
+  .nf-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+
+  .nf-btn {
+    display: inline-block;
+    padding: 0.5rem 1.1rem;
+    border: 1px solid var(--lightgray);
+    border-radius: 5px;
+    font-size: 0.92rem;
+    color: var(--darkgray);
+    text-decoration: none;
+    transition:
+      background-color 0.15s ease,
+      border-color 0.15s ease,
+      color 0.15s ease;
+
+    &:hover {
+      border-color: var(--secondary);
+      color: var(--secondary);
+      background-color: var(--highlight);
+    }
+  }
+
+  .nf-btn-primary {
+    border-color: var(--secondary);
+    color: var(--secondary);
+
+    &:hover {
+      background-color: var(--secondary);
+      color: var(--light);
+    }
+  }
+
+  .nf-foot {
+    font-size: 0.85rem;
+    color: var(--gray);
+    margin: 0;
+  }
+}
+
+@keyframes nf-draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .notfound .nf-crack {
+    .nf-crack-main,
+    .nf-crack-branch {
+      animation: none;
+      stroke-dashoffset: 0;
+    }
+  }
+}
