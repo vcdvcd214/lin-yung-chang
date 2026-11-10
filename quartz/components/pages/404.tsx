@@ -7,34 +7,17 @@ const NotFound: QuartzComponent = ({ cfg }: QuartzComponentProps) => {
 
   return (
     <article class="popover-hint notfound">
-      <div class="nf-crack" aria-hidden="true">
-        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M100 12 L92 52 L108 74 L88 104 L104 132 L96 188"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2.5"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="nf-crack-main"
-          />
-          <path
-            d="M92 52 L64 44 M108 74 L140 62 M88 104 L58 116 M104 132 L136 146"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="1.6"
-            stroke-linecap="round"
-            class="nf-crack-branch"
-          />
-        </svg>
-      </div>
+      <figure class="nf-photo">
+        <img src={`${baseDir}static/404-kiln.webp`} alt="炸窯現場：窯內燒失敗的作品" loading="lazy" />
+        <figcaption>炸窯現場・2025.12.15</figcaption>
+      </figure>
 
       <p class="nf-code">ERROR 404</p>
 
       <h1>頁面燒製失敗</h1>
 
       <p class="nf-lead">
-        這個頁面像一只趕窯時裂開的坯，出窯就不在了。
+        這個頁面像窯裡那些撐不住的坯，出窯就不在了。
       </p>
 
       <p class="nf-note">

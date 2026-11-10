@@ -2,36 +2,35 @@
 
 .notfound {
   text-align: center;
-  padding: 1rem 0 3rem 0;
+  padding: 0 0 3rem 0;
 
-  .nf-crack {
-    width: 120px;
-    height: 120px;
-    margin: 0 auto 0.5rem auto;
-    color: var(--gray);
-    opacity: 0.55;
+  // 炸窯現場照片
+  .nf-photo {
+    margin: 0 auto 1.8rem auto;
+    max-width: 30rem;
 
-    svg {
+    img {
       width: 100%;
-      height: 100%;
+      height: auto;
+      display: block;
+      border-radius: 6px;
+      border: 1px solid var(--lightgray);
+      // 低調處理：稍微降飽和與亮度，讓文字成為主角
+      filter: saturate(0.92) contrast(1.02);
     }
 
-    .nf-crack-main {
-      stroke-dasharray: 260;
-      stroke-dashoffset: 260;
-      animation: nf-draw 0.9s ease-out forwards;
-    }
-
-    .nf-crack-branch {
-      stroke-dasharray: 90;
-      stroke-dashoffset: 90;
-      animation: nf-draw 0.6s ease-out 0.5s forwards;
+    figcaption {
+      margin-top: 0.55rem;
+      font-size: 0.78rem;
+      letter-spacing: 0.06em;
+      color: var(--gray);
+      opacity: 0.8;
     }
   }
 
   .nf-code {
     font-family: var(--codeFont);
-    font-size: 0.8rem;
+    font-size: 0.78rem;
     letter-spacing: 0.22em;
     color: var(--gray);
     margin: 0 0 0.4rem 0;
@@ -103,18 +102,10 @@
   }
 }
 
-@keyframes nf-draw {
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .notfound .nf-crack {
-    .nf-crack-main,
-    .nf-crack-branch {
-      animation: none;
-      stroke-dashoffset: 0;
-    }
+// 手機：照片不要佔滿整屏
+@media all and ($mobile) {
+  .notfound .nf-photo {
+    max-width: 100%;
+    margin-bottom: 1.2rem;
   }
 }
