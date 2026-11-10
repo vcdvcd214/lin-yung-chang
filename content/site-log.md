@@ -7,6 +7,38 @@ description: Still Whispers 網站優化與待辦清單
 紀錄「靜觀微語」數位圖書館的建置過程、技術參數與結構更動。
 
 ---
+> [!abstract]- 📅 2026-11-10 | 首頁重構、作品集索引、社群預覽修復與側欄優化
+> - **🏛️ 首頁重構 (Index Refinement)**
+>     - **賽事區塊轉為「回顧」**：標題改為 `2026 賽事回顧`，整張表收進 `[!abstract]-` 摺疊區塊，首頁視覺密度下降。
+>     - **規格補齊**：補上原本缺漏的「重量上限 200kg」等對位資訊。
+>     - **隨筆更新換血**：原本停在 2 月，改列 5–9 月共 5 篇（地獄懺、冰火開蓋、龍眼窯、Katsushi、落款印章）。
+>     - **歷年紀錄**：補上 2024 年作品，修正 `Gallery/2015/` 多一層的錯誤路徑。
+> - **🎨 作品集索引建置 (Gallery Index)**
+>     - 新增 `content/Gallery/index.md`：以 `[!multi-column]` 排列作品縮圖＋年代／媒材／釉藥／尺寸。
+>     - 附「展出脈絡」與「作品持續補齊中」說明，避免空站觀感。
+>     - 首頁導覽下方新增「🎨 作品集 Gallery →」入口。
+> - **🔗 連結與破圖修復 (Link & Asset Fix)**
+>     - **壞連結 6 處**：`lin-yung-chang/content/...` 本機路徑誤植、`2026-progress`／`gallery/index` 不存在、`Gallery/2015/` 路徑錯誤、首頁 `about/interview-yibo` 不存在。
+>     - **破圖 8 處**：`陶藝講座` 4 張多餘 `assets/` 前綴、`陶藝防裂技法` 的 `.png` 實為 `.webp` 與缺檔、`陶藝學` 目次 `P_6~P_9` 未匯入（改為「待補」）。
+>     - **短連結統一**：5 處 `[[陶藝科學]]` 改為完整檔名＋顯示名。
+>     - 驗證方式：建置後掃描全部 HTML 的 `href`／`img src`，壞連結 0、破圖 0。
+> - **📸 社群預覽圖修復 (Open Graph)**
+>     - **問題**：首頁／`about`／`exhibitions` 的 frontmatter `image:` 指向 `static/` 下**不存在的檔案**，導致 `og:image` 回 404。
+>     - **連帶影響**：因為 `socialImage` 有值，Quartz 會**跳過**自動生成，等於三頁完全沒有預覽圖。
+>     - **解法**：移除三頁的 `image:`，改由 `CustomOgImages` 自動產生 **1200×630**（每張 8–16 KB）。
+> - **🧭 側欄導覽優化 (Explorer)**
+>     - **排序修復**：原 `nameOrder` 使用「書籍紀錄」「隨筆紀錄」等**顯示名稱**，但程式取得的是資料夾名（`Library`、`notes`），導致排序全數失效。改用 `slugSegment` 並讓資料夾優先。
+>     - **每資料夾筆數上限**：新增 `limitPerFolder`（預設 5）與 `noLimitFolders` 選項，超過上限顯示「⋯ 還有 N 篇」連結。
+>     - **SEO 例外保護**：`Library` 與 `open-call` 不截斷，避免賽事頁少掉內鏈。
+>     - **active 保護**：當前頁面若被截掉，仍保留該筆，避免側欄失去標示。
+> - **🧹 統計腳本去重 (Analytics Cleanup)**
+>     - `Footer.tsx` 原本重複載入 GoatCounter（`Head.tsx` 已載入），每頁請求兩次 → 移除 Footer 版本與隱藏計數 img。
+>     - 保留 `quartz.config.ts` 的 Umami（動態注入）＋ `Head.tsx` 的 GoatCounter，各一次。
+> - **⚠️ 踩坑紀錄 (Pitfall)**
+>     - `Explorer` 的 `sortFn` 會被 `toString()` 序列化到瀏覽器端，再用 `new Function()` 重建。
+>     - 因此**函式內不可引用外部常數** —— 初次改寫時把 `folderOrder` 定義在函式外，導致 `ReferenceError`、整個側欄空白。
+>     - 正確做法：所有變數定義在函式內部（與原本 `nameOrder` 寫法一致）。
+
 > [!abstract]- 📅 2026-11-10 | 流量後台無法登入：AdGuard 攔截 DNS 排查
 > - **🚧 症狀 (Symptom)**
 >     - `cloud.umami.is` 與 `vcdvcd.goatcounter.com` 皆顯示 **「This site can't be reached / refused to connect」**。
@@ -117,9 +149,12 @@ description: Still Whispers 網站優化與待辦清單
 | **Engine** | [Quartz 4.0](https://quartz.jzhao.xyz/) | SPA 模式 |
 | **Editor** | **Obsidian / VS Code** | 支援雙向連結與 Prettier 格式化 |
 | **Storage** | **GitHub** | 搭配 GitHub Desktop 管理 |
+| **Deploy** | **GitHub Actions → GitHub Pages** | `v4` 分支推送即自動建置部署 |
 | **Comments** | **Giscus** | GitHub Discussions 後端 |
-| **Analytics** | **Umami Cloud** | `quartz.config.ts` 現行設定（GoatCounter 為舊版紀錄） |
+| **Analytics** | **Umami Cloud** | 動態注入（`postscript.js`） |
+| **Analytics（舊）** | **GoatCounter** | `Head.tsx` 靜態載入，與 Umami 並行 |
 | **SEO 觀測** | **Google Search Console** | 主要流量判讀依據，不受本機攔截影響 |
+| **社群預覽** | **CustomOgImages** | 自動產生 1200×630 網頁縮圖 |
 
 ---
 
