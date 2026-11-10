@@ -2,18 +2,25 @@ import { PageLayout, SharedLayout } from "./quartz/components/PageLayout"
 import * as Component from "./quartz/components"
 
 // 1. 定義 Explorer 的排序邏輯
+// 以「資料夾實際名稱（slugSegment）」為準，index 頁的 title 不影響排序
+const folderOrder = ["about", "Library", "notes", "exhibitions", "Gallery"]
+
 const explorerSortFn = (a, b) => {
-  const nameOrder = ["about", "書籍紀錄", "隨筆紀錄", "網站設置LOG", "tags"]
-  const i = nameOrder.indexOf(a.name)
-  const j = nameOrder.indexOf(b.name)
+  // 資料夾一律排在檔案前面
+  if (a.isFolder !== b.isFolder) return a.isFolder ? -1 : 1
 
-  if (i !== -1 && j !== -1) return i - j
-  if (i !== -1) return -1
-  if (j !== -1) return 1
+  if (a.isFolder && b.isFolder) {
+    const i = folderOrder.indexOf(a.slugSegment)
+    const j = folderOrder.indexOf(b.slugSegment)
+    if (i !== -1 && j !== -1) return i - j
+    if (i !== -1) return -1
+    if (j !== -1) return 1
+  }
 
-  return (a.displayName ?? a.name).localeCompare(
-    b.displayName ?? b.name,
+  return (a.displayName ?? a.slugSegment).localeCompare(
+    b.displayName ?? b.slugSegment,
     "zh-Hant",
+    { numeric: true },
   )
 }
 
