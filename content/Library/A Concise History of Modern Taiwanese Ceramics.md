@@ -1,4 +1,5 @@
 ---
+title: "台灣現代陶藝簡史 | A Concise History of Modern Taiwanese Ceramics"
 tags:
   - books
   - 陶藝經典

@@ -1,4 +1,5 @@
 ---
+title: "Casa BRUTUS 2015年10月號：ルーシー・リーと私の好きな器 | Lucie Rie and My Favorite Ceramics"
 tags:
   - books
   - 陶藝經典

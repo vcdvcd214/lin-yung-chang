@@ -9,6 +9,8 @@ tags:
 description: 走訪國美館 U-108 SPACE 沉浸式科技應用實驗場域，記錄姚瑞中 × 海闊拉帝《地獄懺 Hell Realm》展覽造像張力，並使用 TASCAM DR-07XP 進行 32-bit float 現場高保真收音。
 ---
 
+# 《地獄懺 Hell Realm》
+
 需要靈感時，總習慣往國美館跑。
 
 最近添購 TASCAM DR-07XP，原本是為了採集陶瓷器皿的碰撞聲響。恰逢用了 8 年的 JADEVER JWL-3K 配釉秤修復完畢，去 NOVA 取回拍攝用記憶卡時順道繞了過去。

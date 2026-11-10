@@ -1,4 +1,5 @@
 ---
+title: "釉藥學 GLAZE | 薛瑞芳"
 date: 2026-03-06
 type: daily
 tags:
