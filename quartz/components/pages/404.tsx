@@ -17,7 +17,7 @@ const NotFound: QuartzComponent = ({ cfg }: QuartzComponentProps) => {
       <h1>頁面燒製失敗</h1>
 
       <p class="nf-lead">
-        這個頁面像窯裡那些撐不住的坯，出窯就不在了。
+        找不到的頁面，跟這一窯一樣——都不在了。
       </p>
 
       <p class="nf-note">
