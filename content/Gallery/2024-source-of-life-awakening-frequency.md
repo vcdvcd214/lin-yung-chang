@@ -55,4 +55,4 @@ tags:
 - **[[2026-huludun-nantou-pottery|2026 南投縣陶藝學會聯展《躍馬奔騰》]]** ｜ 葫蘆墩文化中心 3F 展覽室 V
 
 ---
-**連結回溯：** [[../../index|返回首頁]] | [[lin-yung-chang/content/index|作品集總覽]]
+**連結回溯：** [[index|返回首頁]] | [[Gallery/index|作品集總覽]]

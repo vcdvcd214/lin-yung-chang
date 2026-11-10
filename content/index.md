@@ -18,26 +18,27 @@ image: lin-yung-chang-wood-firing.webp
 | **[[Library/index|書籍文獻]]** | **[[notes/Equipment/index|陶藝設備]]** | **[[notes/index|隨筆與實驗]]** | **[[about/index|關於我]]** |
 | 整理前輩技術文獻。 | 工作室保養考據。 | 日常工作與思考。 | 陶藝資歷與故事。 |
 
+> [!note] 🎨 **[[Gallery/index|作品集 Gallery →]]** ｜ 依年代排列，附年代、媒材、釉藥與尺寸規格。
+
 ---
 
-### 🗓️ 2026 工藝賽事地圖 (Exhibition Circuit)
+### 🗓️ 2026 賽事回顧 (Exhibition Circuit · 2026 Recap)
 
-> [!tip] **戰鬥節奏備忘**
-> 點擊賽事名稱可查看官方規格（重量、尺寸、照片要求）。
+> [!tip] **年度節奏備忘**
+> 2026 徵件季已結束（3–6 月）。點擊賽事名稱可查看**常態規格工具書**（重量、尺寸、照片要求），規格每年變動不大，可直接對位下一年度。
 
-| 期間           | 賽事官方全稱 (Official Name)                                                                | 中文名     | 規格備忘 |              |     |
-| :----------- | :------------------------------------------------------------------------------------ | :------ | :--- | ------------ | --- |
-| **03-04月**   | **[[notes/open-call/huangsi-art-exhibition\|Huang-Si Art Exhibition]]**               | 磺溪美展    | 關注中  | 新作對位 (113年後) |     |
-| **04/01-15** | **[[notes/open-call/da-dun-fine-arts-exhibition\|Da Dun Fine Arts Exhibition]]**      | 臺中市大墩美展 | 關注中  |              |     |
-| 5/15         | [[hsinchu-art-exhibition\|Hsinchu Art Exhibition]]                                    | 新竹美展    |      |              |     |
-| 05/19止       | **[[taiwan-green-craft\|Taiwan Green Craft]]**                                        | 臺灣綠工藝   | 關注中  |              |     |
-| 5/29         | [[pingtung-awards\|PingTung Awards]]                                                  | 屏東獎     |      |              |     |
-| **05/31止**   | **[[notes/open-call/yushan-fine-arts-award\|Nantou County Yushan Fine Arts Award]]**  | 南投玉山獎   | 進行中  | 實體照片 (5x7吋)  |     |
-| 5/31         | [[chiayi-art-exhibition\|The Art Exhibition Of Chiayi City]]                          | 嘉義桃城美展  |      |              |     |
-| **06月預計**    | **[[notes/open-call/golden-teapot-award\|Taiwan International Golden Teapot Award]]** | 金壺獎     | 關注中  | 機能與柴燒論述      |     |
-| 06/30        | [[nanying-award\|Nanying Award]]                                                      | 南瀛獎     |      |              |     |
-|              |                                                                                       |         |      |              |     |
-|              |                                                                                       |         |      |              |     |
+> [!abstract]- 📅 2026 徵件季總覽（點擊展開）
+> | 期間 | 賽事官方全稱 (Official Name) | 中文名 | 規格備忘 |
+> | :--- | :--- | :--- | :--- |
+> | **03-04月** | **[[notes/open-call/huangsi-art-exhibition\|Huang-Si Art Exhibition]]** | 磺溪美展 | 新作對位 (113年後) |
+> | **04/01-15** | **[[notes/open-call/da-dun-fine-arts-exhibition\|Da Dun Fine Arts Exhibition]]** | 臺中市大墩美展 | 重量上限 200kg |
+> | **05/15** | **[[notes/open-call/hsinchu-art-exhibition\|Hsinchu Art Exhibition]]** | 新竹美展 | — |
+> | **05/19止** | **[[notes/open-call/taiwan-green-craft\|Taiwan Green Craft]]** | 臺灣綠工藝 | — |
+> | **05/29** | **[[notes/open-call/pingtung-awards\|PingTung Awards]]** | 屏東獎 | — |
+> | **05/31止** | **[[notes/open-call/yushan-fine-arts-award\|Nantou County Yushan Fine Arts Award]]** | 南投玉山獎 | 實體照片 (5x7吋) |
+> | **05/31** | **[[notes/open-call/chiayi-art-exhibition\|The Art Exhibition Of Chiayi City]]** | 嘉義桃城美展 | — |
+> | **06月預計** | **[[notes/open-call/golden-teapot-award\|Taiwan International Golden Teapot Award]]** | 金壺獎 | 機能與柴燒論述 |
+> | **06/30** | **[[notes/open-call/nanying-award\|Nanying Award]]** | 南瀛獎 | — |
 
 👉 [查看完整徵件資訊目錄與簡章存檔 →](notes/open-call/index)
 
@@ -45,17 +46,19 @@ image: lin-yung-chang-wood-firing.webp
 
 ### ✍️ 隨筆更新 (Recent Notes)
 
+- **[[notes/2026-09-06-hell-realm|《地獄懺 Hell Realm》]]**：國美館 U-108，32-bit float 現場收音。
+- **[[notes/2026-08-17-ice-and-fire-tea-caddy-rescue|冰火開蓋法]]**：透明釉誤當氧化鋁，12 顆茶倉的極限溫差救援。
+- **[[notes/2026-07-19-longan-kiln-bavi-wood-firing|龍眼窯柴燒]]**：窯溫曲線與柴燒現場紀錄。
+- **[[notes/2026-05-11-Katsushi-Beats-and-Coffee|Katsushi：泥土、節奏與咖啡]]**：我推薦的背景聲音職人。
 - **[[notes/2026-02-07-signature-stamp|2026 落款印章]]**：比起像別人的刻印，我比較在意它像不像我。
-- **[[notes/2026-02-03-reclaimed-clay|回收土]]**：朱坤培老師提醒的那句話。
-- **[[about/interview-yibo|藝博網專訪回檔]]**：保留消失的工藝對話紀錄。
-- **[[notes/Equipment/Vacuum-Pug-Mill-2HP|練土機維護]]**：R100 真空油更換技術考據。
 
 ---
 
 ### 🎨 歷年紀錄 (Past Highlights)
 
 - **2025** ｜ [[exhibitions/2025-fy-mofa-tea-ware|臺灣茶器聯展]] ｜ 方圓美術館
-- **2015** ｜ [[Gallery/2015/20150816-Incubation|Incubation 孵化]] ｜ 南投陶展示館
+- **2024** ｜ [[Gallery/2024-source-of-life-awakening-frequency|生命之源：甦醒的頻率]] ｜ 2024 年作
+- **2015** ｜ [[Gallery/20150816-Incubation|Incubation 孵化]] ｜ 南投陶展示館
 
 ---
 

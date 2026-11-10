@@ -32,4 +32,4 @@ description: "整理 2026 年度全台藝術賽事之即時報名進度，並保
 | **05/31止** | **南投縣玉山美術獎** | [[yushan-fine-arts-award\|查看規格]]      | 實體照片 (5x7吋)      |
 
 ---
-**連結回溯：** [[lin-yung-chang/content/notes/index|返回工作室首頁]] | [[../gallery/index|作品集總覽]]
+**連結回溯：** [[notes/index|返回工作室首頁]] | [[Gallery/index|作品集總覽]]

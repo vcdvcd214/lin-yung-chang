@@ -63,4 +63,4 @@ image: lin-yung-chang-pottery-artist.webp
 
 ---
 
-**連結回溯：** [[about/index|關於我]] ｜ [[lin-yung-chang/content/index|返回首頁]]
+**連結回溯：** [[about/index|關於我]] ｜ [[index|返回首頁]]

@@ -13,10 +13,10 @@ const config: QuartzConfig = {
     enableSPA: true,
     enablePopovers: true,
     analytics: {
-  provider: "umami",
-  websiteId: "d6f39378-93d1-416e-94f5-2f29b2474f4a",
-  host: "https://cloud.umami.is", // 拿掉後面的 /script.js
-},
+      provider: "umami",
+      websiteId: "d6f39378-93d1-416e-94f5-2f29b2474f4a",
+      host: "https://cloud.umami.is", // 拿掉後面的 /script.js
+    },
     locale: "zh-TW",
     baseUrl: "vcdvcd.com",
     ignorePatterns: ["private", "templates", ".obsidian"],
