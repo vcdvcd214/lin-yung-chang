@@ -1,5 +1,6 @@
 ---
-title: Incubation | 孵
+title: Incubation 孵化｜2015 柴燒與異形卵實驗｜林永章
+description: 2015 年柴燒作品《Incubation 孵化》，以南投燒與異形卵造型探索土胎與落灰的關係，曾於南投陶展示館展出。
 date: 2015-08-16
 tags:
   - 作品

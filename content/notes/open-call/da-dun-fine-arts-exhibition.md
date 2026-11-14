@@ -1,6 +1,7 @@
 ---
 title: "大墩美展"
 long_title: "Da Dun Fine Arts Exhibition"
+description: "臺中市大墩美展工藝類送件規格整理：每年 4 月 1–15 日徵件、重量上限 200kg，含報名流程與歷年簡章重點。"
 category: "Reference/Open-Call"
 tags: [徵件簡章, 工藝類, 參考頁面, 台中]
 ---

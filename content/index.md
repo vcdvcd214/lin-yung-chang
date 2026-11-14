@@ -1,6 +1,6 @@
 ---
-title: 林永章 | Lin Yung-Chang | Nick
-description: 林永章的個人工藝筆記。收錄年度工藝賽事地圖、真空練土機技術考據與經典陶藝文獻整理。在泥土與火的對話中，紀錄最純粹的職人實踐。
+title: 林永章｜陶藝筆記・柴燒與茶器
+description: 林永章，陶藝工作者。長年觀察柴燒、手作茶器與釉藥變化，紀錄作品、展覽與製陶技術。工作與窯場分布於台中與南投。
 ---
 # 🏺 Still Whispers
 
@@ -47,7 +47,7 @@ description: 林永章的個人工藝筆記。收錄年度工藝賽事地圖、�
 
 - **[[notes/2026-09-06-hell-realm|《地獄懺 Hell Realm》]]**：國美館 U-108，32-bit float 現場收音。
 - **[[notes/2026-08-17-ice-and-fire-tea-caddy-rescue|冰火開蓋法]]**：透明釉誤當氧化鋁，12 顆茶倉的極限溫差救援。
-- **[[notes/2026-07-19-longan-kiln-bavi-wood-firing|龍安窯柴燒]]**：窯溫曲線與柴燒現場紀錄。
+- **[[notes/2026-07-19-longan-kiln-bavi-wood-firing|南投山邊的柴窯]]**：窯溫曲線與柴燒現場紀錄。
 - **[[notes/2026-05-11-Katsushi-Beats-and-Coffee|Katsushi：泥土、節奏與咖啡]]**：我推薦的背景聲音職人。
 - **[[notes/2026-02-07-signature-stamp|2026 落款印章]]**：比起像別人的刻印，我比較在意它像不像我。
 

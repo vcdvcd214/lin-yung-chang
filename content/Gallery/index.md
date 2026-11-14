@@ -1,6 +1,6 @@
 ---
 title: 🎨 作品集 | Gallery
-description: 林永章 Lin Yung-Chang（Nick）陶藝作品索引。收錄柴燒、瓷土鈷釉與茶器系列，附創作年代、媒材與尺寸規格。
+description: 林永章陶藝作品索引。收錄柴燒、瓷土鈷釉與茶器系列，附創作年代、媒材、釉藥與尺寸規格。
 ---
 
 # 🎨 作品集 (Gallery)

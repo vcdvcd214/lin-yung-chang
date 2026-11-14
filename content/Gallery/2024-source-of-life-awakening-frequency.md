@@ -1,6 +1,6 @@
 ---
 title: "生命之源：甦醒的頻率 | Source of Life: Awakening Frequency"
-description: "林永章 2024 年作品。瓷土基底結合鈷釉柴燒，捕捉生命破曉時分的律動感。"
+description: "林永章 2024 年柴燒作品《生命之源：甦醒的頻率》。瓷土基底結合鈷釉，於柴窯中捕捉生命破曉時分的律動感。"
 tags:
   - 瓷土
   - 鈷釉

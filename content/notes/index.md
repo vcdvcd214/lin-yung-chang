@@ -16,7 +16,7 @@ description: 林永章的工作室隨筆：柴燒現場、窯後救援、釉藥�
 
 - **09/06** ｜ [[2026-09-06-hell-realm|《地獄懺 Hell Realm》]] ｜ 國美館 U-108，32-bit float 現場收音
 - **08/17** ｜ [[2026-08-17-ice-and-fire-tea-caddy-rescue|冰火開蓋法]] ｜ 透明釉誤當氧化鋁，12 顆茶倉的極限溫差救援
-- **07/19** ｜ [[2026-07-19-longan-kiln-bavi-wood-firing|龍安窯柴燒]] ｜ 巴威颱風下的火與泥
+- **07/19** ｜ [[2026-07-19-longan-kiln-bavi-wood-firing|南投山邊的柴窯]] ｜ 巴威颱風下的火與泥
 - **05/11** ｜ [[2026-05-11-Katsushi-Beats-and-Coffee|Katsushi：泥土、節奏與咖啡]] ｜ 我推薦的背景聲音職人
 - **02/22** ｜ [[2026-02-22-Taptic-Engine|Taptic Engine]] ｜ 數位觸感的類比思考
 - **02/17** ｜ [[2026-02-17-new-year-chu-kun-pei|初一：開門見喜，遇見朱坤培老師]] ｜ 春節的意外相遇
